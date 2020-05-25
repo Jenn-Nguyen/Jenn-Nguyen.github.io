@@ -1,0 +1,131 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+	font-size:16px;
+}
+img,
+iframe {
+	max-width: 100%;
+	height: auto;
+	/* so that aspect ratio is kept even if height is declared in markup */
+	border: 0;
+	/* this stops a border if the image is inside a link */
+}
+/* This is a CSS comment */
+body {
+	font-family: arial, sans-serif;
+}
+/* background color defaults */
+body {
+	background-color: orange;
+}
+header {
+	background-color: rgba(255,255,255,0.50);
+}
+/* Note that if we want a number of different elements to haave the same style, we just comma sepreate the, */
+header, footer {
+	text-align:center;
+}
+/* TYPOGRAPHY */
+p, blockquotes, li{
+	font-family: 'Josefin Sans', sans-serif;
+}
+h1, h2 {
+	font-family: 'Courgette', cursive;
+}
+
+
+h1, h2, p, blockquotes{
+	text-align: center;
+}
+h1 {
+	font-size: 50px;
+	color: black; /*white*/
+	/* Took out uppercase*/
+}
+h2 {
+	font-size: 30px;
+	
+/* took out uppercase*/
+}
+h1,h2,p,li {
+	padding-bottom: 1em;
+}
+.item {
+	background-color: #FDEDEC;
+	padding: 1%;
+	margin: 1%;
+	margin-bottom: 20px;
+	margin-top: 20px;
+	border-radius: 10px;
+}
+/* let's bring width a little bit in */
+main {
+	/* there's rarely any time you should set an explicit width. Always use max-width wherever possible */
+	max-width: 1000px;
+	/* Change the above to width: 1000px and see what happens with responsive */
+	margin-left: auto;
+	margin-right: auto;
+}
+/* nesting */
+.item li {
+	margin-left: 25px;
+}
+blockquote {
+	text-transform: uppercase;
+	font-style: italic;
+}
+nav {
+	text-align: center;
+}
+nav li {
+	display: inline-block;
+}
+
+nav a {
+	background: white;
+	color:black;
+	padding: 5 px;
+	text-decoration: none;
+	border-radius: 5px;
+}
+nav a:hover {
+	background: orange;
+}
+body {
+	background-color: black;
+	background-image: url(warmflowers.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+/*Media Query - Responsive */
+@media screen and (min-width: 500px) {
+	body {
+		background-color: #7903B6;
+			font-family: arial;
+	}
+	.item {
+		background-color: rgba(246,246,246,0.90);
+	}
+	h2 {
+		font-family: 'Courgette', cursive;
+	}
+}
+@media screen and (min-width:768px) {
+	body {
+		background-color: black;
+		background-image: url(warmflowers.jpg);
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+	.item {
+		width: 31.3%;
+		background-color: rgba(188,170,139,0.90); float: left;
+	}
+	footer {
+		color: white;
+		clear: both;
+	}
+}
